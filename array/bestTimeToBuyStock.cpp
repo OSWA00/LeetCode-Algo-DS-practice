@@ -12,7 +12,7 @@ using namespace std;
 int maxProfit(vector<int>& prices) {
     int maxProfit = 0;
     int minValue = INT_MAX;
-    for (int i = 0; i < prices.size(); i++) {
+    for (size_t i = 0; i < prices.size(); i++) {
         if (prices[i] < minValue) {
             minValue = prices[i];
         }
